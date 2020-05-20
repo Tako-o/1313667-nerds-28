@@ -5,3 +5,6 @@
 /*li {
     list-style-type: none; 
    }*/
+map {
+	background-size: contain;
+}
