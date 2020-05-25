@@ -7,72 +7,75 @@
   </head>
   <body>
   	<header>
-      <img src="img/nerds-logo.svg" alt="Логотип">
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" alt="Логотип">
+      </a>
   		<nav>
   			<ul>
   				<li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a></li>
   			</ul>
   		</nav>  		
   	</header>
   	<main>
-      <h1>Магазин готовых шаблонов</h1>
-      <form>
-        <label for="">Сетка:</label>
-        <ul>
-          <li><!--<input name="setka" type="radio">-->Адаптивная</li>
-          <li><!--<input name="setka" type="radio">-->Фиксированная</li>
-          <li><!--<input name="setka" type="radio">-->Резиновая</li>
-        </ul>
-        <label for="">Особенности:</label>
-        <ul>
-          <li><!--<input name="attribute" type="checkbox">-->Слайдер</li>
-          <li><!--<input name="attribute" type="checkbox">-->Блок преимуществ</li>
-          <li><!--<input name="attribute" type="checkbox">-->Новости</li>
-          <li><!--<input name="attribute" type="checkbox">-->Галерея</li>
-          <li><!--<input name="attribute" type="checkbox">-->Корзина</li>
-        </ul>
-        <input type="submit" value="Показать">          
-      </form>
+      <section>      
+        <form>
+          <div>
+            <label>Сетка:</label>
+            <label><input name="setka" type="radio" value="adaptive" checked>Адаптивная</label>
+            <label><input name="setka" type="radio" value="fixed">Фиксированная</label>
+            <label><input name="setka" type="radio" value="flexible">Резиновая</label></div>
+          <div>
+            <label>Особенности:</label>
+            <label><input name="slider" type="checkbox">Слайдер</label>
+            <label><input name="advantage" type="checkbox">Блок преимуществ</label>
+            <label><input name="news" type="checkbox">Новости</label>
+            <label><input name="gallery" type="checkbox">Галерея</label>
+            <label><input name="shopping-cart" type="checkbox">Корзина</label>
+          </div>
+          <input type="submit" value="Показать">          
+        </form>
+      </section>
       <section>
+        <h1>Магазин готовых шаблонов</h1>
         <ul>
           <li>
-            <img src="img/sedona.png" alt="Шаблон туристического сайта">
+            <img src="img/sedona.png" width="324" height="522" alt="Шаблон туристического сайта">
             <div>
-              Sedona Информационный сайт  для туристов 9 900 &#8381
+              Sedona Информационный сайт для туристов 9 900 &#8381;
             </div>
           </li>
           <li>
-            <img src="img/pink.png" alt="Шаблон сайта для мобильного приложения">
+            <img src="img/pink.png" width="324" height="522" alt="Шаблон сайта для мобильного приложения">
             <div>
-              Pink App Продуктовый лендинг приложения для iOS и Android 9 900 &#8381
+              Pink App Продуктовый лендинг приложения для iOS и Android 9 900 &#8381;
             </div>
           </li>
           <li>
-            <img src="img/borodinski.png" alt="Шаблон сайта барбершопа">
+            <img src="img/borodinski.png" width="324" height="522" alt="Шаблон сайта барбершопа">
             <div>
-              Barbershop Сайт салона красоты. Для мужчин, да. 9 900 &#8381
+              Barbershop Сайт салона красоты. Для мужчин, да. 9 900 &#8381;
             </div>
           </li>
           <li>
-            <img src="img/mishka.png" alt="Шаблон сайта хэндмэйд">
+            <img src="img/mishka.png" width="324" height="522" alt="Шаблон сайта хэндмэйд">
             <div>
-              Mishka Интернет-магазин  вязаных игрушек 9 900 &#8381
+              Mishka Интернет-магазин вязаных игрушек 9 900 &#8381;
             </div>
           </li>
           <li>
-            <img src="img/a plus.png" alt="Шаблон учебного сайта">
+            <img src="img/a-plus.png" width="324" height="522" alt="Шаблон учебного сайта">
             <div>
-              A Plus Лендинг курсов повышения квалификации 9 900 &#8381
+              A Plus Лендинг курсов повышения квалификации 9 900 &#8381;
             </div>
           </li>
           <li>
-            <img src="img/kvast.png" alt="Шаблон сайта крафтового кваса">
+            <img src="img/kvast.png" width="324" height="522" alt="Шаблон сайта крафтового кваса">
             <div>
-              Кваст Промо-сайт производителя крафтового кваса 9 900 &#8381
+              Кваст Промо-сайт производителя  крафтового кваса 9 900 &#8381;
             </div>
           </li>
         </ul>
@@ -80,8 +83,22 @@
   	</main>
     <footer>      
       <section>
-        <!-- <img class="map" src="img/map 1.png" alt="Карта нашего местонахождения">
-        -->
+        <form action="#" name="newform" method="post">
+          <h3>Напишите нам</h3>
+          <label for="Name">
+            Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
+          </label>          
+          <label for="e-mail">
+            Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
+          </label>
+          <label for="comment">
+            Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
+          </label>
+          <input type="submit" value="Отправить">
+        </form>
+        <!-- <img class="map" src="img/map 1.png" alt="Карта нашего местонахождения">-->          
+      </section>
+      <section>
           <ul>
             <li>
               <a href="http://vk.com">

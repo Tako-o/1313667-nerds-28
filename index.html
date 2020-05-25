@@ -7,35 +7,37 @@
   </head>
   <body>
   	<header>
-  		<img src="img/nerds-logo.svg" alt="Логотип">
+  		<a>
+        	<img src="img/nerds-logo.svg" alt="Логотип">
+      	</a>
   		<nav>
   			<ul>
   				<li><a>Студия</a></li>
   				<li><a href="#">Клиенты</a></li>
   				<li><a href="catalog.html">Магазин</a></li>
   				<li><a href="#">Контакты</a></li>
-  				<li><a href="#">Корзина</a></li>
+  				<li><a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a></li>
   			</ul>  			
   		</nav>  		
   	</header>
   	<main>
-  		<!--  <h1>Дизайн-студия "Нёрдс"</h1> -->
+  		<h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
   		<section>
   			<ul>
   				<li>
-  					<img src="img/web-site.jpg" alt="Веб-сайты">
+  					<img src="img/web-site.jpg" width="300" height="146" alt="Веб-сайты">
   					<h2>Веб-сайты</h2>
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<a href="#">Заказать</a>
   				</li>  				
   				<li>
-  					<img src="img/application.png" alt="Приложения">
+  					<img src="img/application.png" width="300" height="146" alt="Приложения">
   					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a href="#">Заказать</a>
   				</li>  				
   				<li>
-  					<img src="img/presentations.png" alt="Презентации">
+  					<img src="img/presentations.png" width="300" height="146" alt="Презентации">
   					<h2>Презентации</h2>
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
   					<a href="#">Заказать</a>
@@ -55,8 +57,22 @@
   	</main>
   	<footer>      
       <section>
-      	<!-- <img class="map" src="img/map 1.png" alt="Карта нашего местонахождения">
-      	-->
+      	<form action="#" name="newform" method="post">
+      		<h3>Напишите нам</h3>
+      		<label for="Name">
+      			Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
+      		</label>      		
+      		<label for="e-mail">
+      			Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
+      		</label>
+      		<label for="comment">
+      			Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
+      		</label>
+      		<input type="submit" value="Отправить">
+      	</form>
+      	<!-- <img class="map" src="img/map 1.png" alt="Карта нашего местонахождения">-->      		
+      </section>
+      <section>
           <ul>
             <li>
               <a href="http://vk.com">
