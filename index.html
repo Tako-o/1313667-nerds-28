@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  	<link href="normalize.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  	<header>
-  		<a>
-        	<img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
-      	</a>
-  		<nav>
-  			<ul>
+  <body class="page-body">
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a href="#" class="main-header-logo">
+        		<img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
+      		</a>  		
+  			<ul class="site-navigation">
   				<li><a>Студия</a></li>
   				<li><a href="#">Клиенты</a></li>
   				<li><a href="catalog.html">Магазин</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul> 
-  			<ul>
-  				<li><a href="#">Корзина</a></li>
-  			</ul>  			
+  			<ul class="cart-navigation">
+          		<li><a href="#" class="img-cart">Корзина</a></li>
+  			</ul> 			
   		</nav>  		
   	</header>
   	<main>
   		<h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
   		<section>
-  			<ul>
-  				<li>
-  					<img src="img/web-site.jpg" width="300" height="146" alt="Веб-сайты"><!-- как только научусь пользоваться CSS удалю-->
+  			<ul class="features">
+  				<li class="web-site">
+  					<!--<img src="img/web-site.jpg" width="300" height="146" alt="Веб-сайты"> как только научусь пользоваться CSS удалю-->
   					<h2>Веб-сайты</h2>
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a href="#">Заказать</a>
+  					<a href="#" class="order red">Заказать</a>
   				</li>  				
-  				<li>
-  					<img src="img/application.png" width="300" height="146" alt="Приложения"><!-- как только научусь пользоваться CSS удалю-->
+  				<li class="application">
+  					<!--<img src="img/application.png" width="300" height="146" alt="Приложения"> как только научусь пользоваться CSS удалю-->
   					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="#">Заказать</a>
+					<a href="#" class="order green">Заказать</a>
   				</li>  				
-  				<li>
-  					<img src="img/presentations.png" width="300" height="146" alt="Презентации"><!-- как только научусь пользоваться CSS удалю-->
+  				<li class="presentation">
+  					<!--<img src="img/presentations.png" width="300" height="146" alt="Презентации"> как только научусь пользоваться CSS удалю-->
   					<h2>Презентации</h2>
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a href="#">Заказать</a>
+  					<a href="#" class="order yellow">Заказать</a>
   				</li>  				
   			</ul>			
   		</section>
@@ -59,7 +61,7 @@
   	</main>
   	<footer>      
       <section>
-      	<form action="https://echo.htmlacademy.ru" name="feedback" method="post">
+      	<form class="feedback" action="https://echo.htmlacademy.ru" name="feedback" method="post">
       		<h3>Напишите нам</h3>
       		<label for="Name">
       			Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
@@ -70,25 +72,25 @@
       		<label for="comment">
       			Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
       		</label>
-      		<button type="submit">Отправить</button>
+      		<button class="button-send" type="submit">Отправить</button>
       	</form>
       	<!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->  		
       </section>
-      <section>
+      <section >
           <ul>
             <li>
-              <a href="http://vk.com" aria-label="Переход на страницу нердс в VK">
-                <img src="img/icon/vk-icon.svg" alt="Ссылка на наш VK">
+              <a href="http://vk.com" class="vk-icon">
+                <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Ссылка на наш VK">
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/" aria-label="Переход на страницу нердс в Facebook">
-                <img src="img/icon/fb-icon.svg" alt="Ссылка на наш Facebook">
+              <a href="https://www.facebook.com/" class="fb-icon" >
+                <img src="img/icon/fb-icon.svg"width="18" height="18" alt="Ссылка на наш Facebook">
               </a>
             </li>
             <li>
-               <a href="https://www.instagram.com" aria-label="Переход на страницу нердс в Instagramm">
-                <img src="img/icon/insta-icon.svg" alt="Ссылка на наш Instagramm">
+               <a href="https://www.instagram.com" class="insta-icon">
+                <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Ссылка на наш Instagramm">
               </a>
             </li>
           </ul>
