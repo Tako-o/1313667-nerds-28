@@ -1,141 +1,155 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Магазин | Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo" aria-label="Переход на главную">
-          <img src="img/nerds-logo.svg" width="165" height="65"  alt="Логотип Нёрдс">
-        </a>
-  			<ul class="site-navigation">
-  				<li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a>Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul> 
-        <ul class="cart-navigation">
-          <li><a href="#" class="img-cart">Корзина</a></li>
-  			</ul>
-  		</nav>  		
-  	</header>
-  	<main>
-      <h1 class="heading-catalog">Магазин готовых шаблонов</h1>   
-      <section class="filter-form">           
-        <form name="filter" method="get">
-          <div>
-            <label class="filter-type">Сетка:</label>
-            <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
-            <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
-            <label><input name="grid" type="radio" value="responsive">Резиновая</label>
-          </div>
-          <div>
-            <label class="filter-type">Особенности:</label>
-            <label><input name="slider" type="checkbox">Слайдер</label>
-            <label><input name="advantage" type="checkbox">Блок преимуществ</label>
-            <label><input name="news" type="checkbox">Новости</label>
-            <label><input name="gallery" type="checkbox">Галерея</label>
-            <label><input name="shopping-cart" type="checkbox">Корзина</label>
-          </div>
-          <button class="button-show" type="submit">Показать</button>         
-        </form>
-      </section>
-      <section>        
-        <ul class="catalog">
-          <li>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>Магазин | Нёрдс</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body class="page-body">
+      <header class="main-header">
+         <nav class="main-navigation">
+            <a href="index.html" class="main-header-logo" aria-label="Переход на главную">
+            <img src="img/nerds-logo.svg" width="165" height="65"  alt="Логотип Нёрдс">
+            </a>
+            <ul class="site-navigation">
+               <li><a href="index.html">Студия</a></li>
+               <li><a href="#">Клиенты</a></li>
+               <li><a  class="page">Магазин</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+               <li><a href="#" class="img-cart">Корзина</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <h1 class="heading-catalog">Магазин готовых шаблонов</h1>
+         <section class="filter-form">
+            <form name="filter" method="get">
+               <div>
+                  <label class="filter-type">Сетка:</label>
+                  <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
+                  <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
+                  <label><input name="grid" type="radio" value="responsive">Резиновая</label>
+               </div>
+               <div>
+                  <label class="filter-type">Особенности:</label>
+                  <label><input name="slider" type="checkbox">Слайдер</label>
+                  <label><input name="advantage" type="checkbox">Блок преимуществ</label>
+                  <label><input name="news" type="checkbox">Новости</label>
+                  <label><input name="gallery" type="checkbox">Галерея</label>
+                  <label><input name="shopping-cart" type="checkbox">Корзина</label>
+               </div>
+               <button class="button-show" type="submit">Показать</button>         
+            </form>
+         </section>
+         <section>
+            <ul class="catalog">
+               <li>
+                  <div>
+                     <img src="img/sedona.jpg" width="324" height="522" alt="Шаблон туристического сайта">
+                     <section class="catalog-info">  
+                        <h3><a href="#">Sedona</a></h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/pink.jpg" width="324" height="522" alt="Шаблон сайта для мобильного приложения">
+                     <section class="catalog-info">  
+                        <h3><a href="#">Pink App</a></h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/borodinski.jpg" width="324" height="522" alt="Шаблон сайта барбершопа">
+                     <section class="catalog-info">                     
+                        <h3><a href="#">Barbershop</a></h3>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/mishka.jpg" width="324" height="522" alt="Шаблон сайта хэндмэйд">
+                     <section class="catalog-info">  
+                        <h3><a href="#">Mishka</a></h3>
+                        <p>Интернет-магазин вязаных игрушек</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/a-plus.jpg" width="324" height="522" alt="Шаблон учебного сайта">
+                     <section class="catalog-info">  
+                        <h3><a href="#">A Plus</a></h3>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <img src="img/kvast.jpg" width="324" height="522" alt="Шаблон сайта крафтового кваса">
+                     <section class="catalog-info">  
+                        <h3><a href="#">Кваст</a></h3>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a href="#" class="price">9 900 &#8381;</a>
+                     </section>
+                  </div>
+               </li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+         <section>
+            <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
+               <h3>Напишите нам</h3>
+               <label for="Name">
+               Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
+               </label>          
+               <label for="e-mail">
+               Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
+               </label>
+               <label for="comment">
+               Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
+               </label>
+               <button class="button-send" type="submit">Отправить</button>
+            </form>
+            <!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->          
+         </section>
+         <section>
+            <ul>
+               <li>
+                  <a href="http://vk.com" class="icon-social-cn" aria-label="Ссылка на наш VK">
+                  <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.facebook.com/" class="icon-social"  aria-label="Ссылка на наш Facebook">
+                  <img src="img/icon/fb-icon.svg"width="18" height="18" alt="Иконка Facebook">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com" class="icon-social" aria-label="Ссылка на наш Instagramm">
+                  <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Иконка Instagramm">
+                  </a>
+               </li>
+            </ul>
             <div>
-              <img src="img/sedona.jpg" width="324" height="522" alt="Шаблон туристического сайта">
-              <h3><a href="#">Sedona</a></h3>
-              <p>Информационный сайт для туристов</p>            
-              <a href="#" class="price">9 900 &#8381;</a>
+               <h2>Давайте дружить, это выгодно!</h2>
+               <p>Скидка 10% для друзей из социальных сетей.</p>
             </div>
-          </li>
-          <li>
-            <div>
-            <img src="img/pink.jpg" width="324" height="522" alt="Шаблон сайта для мобильного приложения">
-              <h3><a href="#">Pink App</a></h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#" class="price">9 900 &#8381;</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/borodinski.jpg" width="324" height="522" alt="Шаблон сайта барбершопа">
-              <h3><a href="#">Barbershop</a></h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#" class="price">9 900 &#8381;</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/mishka.jpg" width="324" height="522" alt="Шаблон сайта хэндмэйд">
-              <h3><a href="#">Mishka</a></h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#" class="price">9 900 &#8381;</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/a-plus.jpg" width="324" height="522" alt="Шаблон учебного сайта">
-              <h3><a href="#">A Plus</a></h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#" class="price">9 900 &#8381;</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/kvast.jpg" width="324" height="522" alt="Шаблон сайта крафтового кваса">
-              <h3><a href="#">Кваст</a></h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#" class="price">9 900 &#8381;</a>
-            </div>
-          </li>
-        </ul>
-      </section>	
-  	</main>
-    <footer>      
-      <section>
-        <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
-          <h3>Напишите нам</h3>
-          <label for="Name">
-            Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
-          </label>          
-          <label for="e-mail">
-            Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
-          </label>
-          <label for="comment">
-            Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
-          </label>
-          <button class="button-send" type="submit">Отправить</button>
-        </form>
-        <!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->          
-      </section>
-      <section>
-          <ul>
-            <li>
-              <a href="http://vk.com" class="vk-icon">
-                <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Ссылка на наш VK">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/" class="fb-icon" >
-                <img src="img/icon/fb-icon.svg"width="18" height="18" alt="Ссылка на наш Facebook">
-              </a>
-            </li>
-            <li>
-               <a href="https://www.instagram.com" class="insta-icon">
-                <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Ссылка на наш Instagramm">
-              </a>
-            </li>
-          </ul>
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>    
-    </footer>
-  </body>
+         </section>
+      </footer>
+   </body>
 </html>
