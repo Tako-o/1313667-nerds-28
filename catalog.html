@@ -24,9 +24,10 @@
             </ul>
          </nav>
       </header>
-      <main>
+      <main class="clearfix">
          <h1 class="heading-catalog">Магазин готовых шаблонов</h1>
          <section class="filter-form">
+            <h3  class="visually-hidden">Фильтр товаров</h3>
             <form name="filter" method="get">
                <div>
                   <label class="filter-type">Сетка:</label>
@@ -46,72 +47,73 @@
             </form>
          </section>
          <section>
+            <h3  class="visually-hidden">Каталог товара</h3>
             <ul class="catalog">
-               <li>
+               <li class="catalog-sedona">
                   <div>
                      <img src="img/sedona.jpg" width="324" height="522" alt="Шаблон туристического сайта">
-                     <section class="catalog-info">  
-                        <h3><a href="#">Sedona</a></h3>
-                        <p>Информационный сайт для туристов</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
                   </div>
+                     <section class="catalog-info sedona">  
+                     <h3><a href="#">Sedona</a></h3>
+                     <p>Информационный сайт для туристов</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
-               <li>
+               <li class="catalog-pink">
                   <div>
                      <img src="img/pink.jpg" width="324" height="522" alt="Шаблон сайта для мобильного приложения">
-                     <section class="catalog-info">  
-                        <h3><a href="#">Pink App</a></h3>
-                        <p>Продуктовый лендинг приложения для iOS и Android</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
-                  </div>
+                  </div>  
+                  <section class="catalog-info pink">  
+                     <h3><a href="#">Pink App</a></h3>
+                     <p>Продуктовый лендинг приложения для iOS и Android</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
-               <li>
+               <li class="catalog-barbershop">
                   <div>
                      <img src="img/borodinski.jpg" width="324" height="522" alt="Шаблон сайта барбершопа">
-                     <section class="catalog-info">                     
-                        <h3><a href="#">Barbershop</a></h3>
-                        <p>Сайт салона красоты. Для мужчин, да.</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
                   </div>
+                  <section class="catalog-info barbershop">                     
+                     <h3><a href="#">Barbershop</a></h3>
+                     <p>Сайт салона красоты. Для мужчин, да.</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
-               <li>
+               <li class="catalog-mishka">
                   <div>
                      <img src="img/mishka.jpg" width="324" height="522" alt="Шаблон сайта хэндмэйд">
-                     <section class="catalog-info">  
-                        <h3><a href="#">Mishka</a></h3>
-                        <p>Интернет-магазин вязаных игрушек</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
-                  </div>
+                  </div>   
+                  <section class="catalog-info mishka">  
+                     <h3><a href="#">Mishka</a></h3>
+                     <p>Интернет-магазин вязаных игрушек</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
-               <li>
+               <li class="catalog-aplus">
                   <div>
                      <img src="img/a-plus.jpg" width="324" height="522" alt="Шаблон учебного сайта">
-                     <section class="catalog-info">  
-                        <h3><a href="#">A Plus</a></h3>
-                        <p>Лендинг курсов повышения квалификации</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
-                  </div>
+                  </div>   
+                  <section class="catalog-info aplus">  
+                     <h3><a href="#">A Plus</a></h3>
+                     <p>Лендинг курсов повышения квалификации</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
-               <li>
+               <li class="catalog-kvast">
                   <div>
                      <img src="img/kvast.jpg" width="324" height="522" alt="Шаблон сайта крафтового кваса">
-                     <section class="catalog-info">  
-                        <h3><a href="#">Кваст</a></h3>
-                        <p>Промо-сайт производителя крафтового кваса</p>
-                        <a href="#" class="price">9 900 &#8381;</a>
-                     </section>
                   </div>
+                  <section class="catalog-info kvast">  
+                     <h3><a href="#">Кваст</a></h3>
+                     <p>Промо-сайт производителя крафтового кваса</p>
+                     <a href="#" class="price">9 900 &#8381;</a>
+                  </section>                  
                </li>
             </ul>
          </section>
       </main>
       <footer>
-         <section>
+         <section  class="feedback">
             <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
                <h3>Напишите нам</h3>
                <label for="Name">
@@ -125,27 +127,27 @@
                </label>
                <button class="button-send" type="submit">Отправить</button>
             </form>
-            <!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->          
+            <!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->       
          </section>
-         <section>
+         <section class="contact">
             <ul>
                <li>
-                  <a href="http://vk.com" class="icon-social-cn" aria-label="Ссылка на наш VK">
-                  <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
+                  <a href="http://vk.com" class="icon-social" aria-label="Ссылка на наш VK">
+                     <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
                   </a>
                </li>
                <li>
                   <a href="https://www.facebook.com/" class="icon-social"  aria-label="Ссылка на наш Facebook">
-                  <img src="img/icon/fb-icon.svg"width="18" height="18" alt="Иконка Facebook">
+                     <img src="img/icon/fb-icon.svg" width="18" height="18" alt="Иконка Facebook">
                   </a>
                </li>
                <li>
                   <a href="https://www.instagram.com" class="icon-social" aria-label="Ссылка на наш Instagramm">
-                  <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Иконка Instagramm">
+                     <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Иконка Instagramm">
                   </a>
                </li>
             </ul>
-            <div>
+            <div class="sale">
                <h2>Давайте дружить, это выгодно!</h2>
                <p>Скидка 10% для друзей из социальных сетей.</p>
             </div>

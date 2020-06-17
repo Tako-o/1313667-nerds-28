@@ -1,22 +1,22 @@
 /* roboto-regular - latin_cyrillic */
 
 @font-face {
-	font-family: 'Roboto';
+	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-regular.woff2') format('woff2'), /* Super Modern Browsers */
-	url('../fonts/roboto-regular.woff') format('woff'), /* Modern Browsers */
+	src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-regular.woff2") format("woff2"),
+	url("../fonts/roboto-regular.woff") format("woff");
 }
 
 
 /* roboto-700 - latin_cyrillic */
 
 @font-face {
-	font-family: 'Roboto';
+	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
-	src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-700.woff2') format('woff2'), /* Super Modern Browsers */
-	url('../fonts/roboto-700.woff') format('woff'), /* Modern Browsers */
+	src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-700.woff2") format("woff2"), /* Super Modern Browsers */
+	url("../fonts/roboto-700.woff") format("woff");
 }
 
 
@@ -53,7 +53,7 @@ button {
 
 body {
 	background-color: var(--white);
-	font-family: 'Roboto', "Tahoma", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 
 a {
@@ -69,12 +69,16 @@ img {
 /* Main navigation */
 
 .main-navigation {
-	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 30px;
+	background-color: #F0E68C;
+	outline: 1px solid red;
 }
 
 .site-navigation li {
@@ -134,6 +138,8 @@ img {
 	margin: 0;
 	text-align: center;
 	font-size: 55px;
+	background-color: #F0E68C;
+	outline: 1px solid red;
 }
 
 
@@ -145,8 +151,11 @@ img {
 }
 
 .features {
+	display: flex;
 	font-size: 16px;
 	line-height: 24px;
+	background-color: #F0E68C;
+	outline: 1px solid red;
 }
 
 .features h2 {
@@ -155,13 +164,25 @@ img {
 }
 
 .features-background {
-	/*background-image: url("../img/web-site.jpg");
 	background-position: top left;
   	background-repeat: no-repeat;
-	width: 300; 
-	height: 146;
 	margin: 10px;
-	padding: 10px;*/
+	padding: 10px;
+}
+
+.web-site {
+	background-image: url("../img/web-site.jpg");
+	outline: 1px solid red;
+}
+
+.application {
+	background-image: url("../img/application.jpg");
+	outline: 1px solid red;
+}
+
+.presentations {
+	background-image: url("../img/presentations.jpg");
+	outline: 1px solid red;
 }
 
 .order {
@@ -223,7 +244,15 @@ img {
 	border: 1px solid var(--white);
 }
 
+.filter-form {
+	background-color: #F0E68C;
+	outline: 1px solid red;
+	float: left;
+}
+
 .filter {
+	display: flex;
+	flex-direction: column;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -231,11 +260,30 @@ img {
 .filter-type {
 	font: inherit;
 	font-size: 18px;
+	font-weight: bold;
 }
 
+.filter-type, input {
+	display: flex;
+	flex-direction: column;
+}
+
+
 .catalog {
+	display: flex;
+	float: right;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-direction: row;
+	align-items: ;
+	flex-wrap: wrap;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	width: 761px;
+	background-color: #F0E68C;
+	outline: 1px solid red;
 }
 
 .catalog h3 {
@@ -260,11 +308,42 @@ img {
 	display: block
 }
 
+.catalog-sedona {
+	align-items: flex-start;
+	outline: 1px solid red;
+}
+
+.catalog-pink {
+	align-items: flex-end;
+	outline: 1px solid red;
+}
+
+.catalog-barbershop {
+	outline: 1px solid red;
+}
+
+.catalog-mishka {
+	outline: 1px solid red;
+}
+
+.catalog-aplus {
+	outline: 1px solid red;
+}
+
+.catalog-kvast {
+	outline: 1px solid red;
+}
+
 .img-cart {
-	/*background-image: url("../img/icon/cart-icon.svg");*/
+	background-image: url("../img/icon/cart-icon.svg");
 	background-position: top left;
 	background-repeat: no-repeat;
-	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .feedback {
@@ -278,15 +357,24 @@ img {
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.contact {
+	
+	background-color: #F0E68C;
+	outline: 1px solid red;
+}
+
+.sale {
+	background-color: #F0E68C;
+	outline: 1px solid red;
 }
 
 .icon-social {
@@ -294,7 +382,7 @@ img {
 	height: 81px;
 	border: 1px solid var(--white);
 	border-radius: 50%;
-	shape-inside: circle(50% at center center);
+	shape-outside: circle(50% at center center);
 	text-align: center;
 	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
