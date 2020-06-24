@@ -7,41 +7,40 @@
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
-   <body class="page-body">
+   <body class="page-body">      
       <header class="main-header">
-         <nav class="main-navigation">
-            <a href="#" class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
-            </a>  		
-            <ul class="site-navigation">
-               <li ><a class="page">Студия</a></li>
-               <li><a href="#">Клиенты</a></li>
-               <li><a href="catalog.html">Магазин</a></li>
-               <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-               <li class="img-cart"><a href="#">Корзина</a></li>
-            </ul>
-         </nav>
+         <div class="container">         
+            <nav class="main-navigation">
+               <a href="#" class="main-header-logo">
+                  <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
+               </a>                              		
+               <ul class="site-navigation">
+                  <li><a class="page">Студия</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>
+               </ul>
+               <ul class="user-navigation">
+                  <li class="img-cart"><a href="#">Корзина</a></li>
+               </ul>                
+            </nav>
+         </div>         
       </header>
-      <main class="clearfix">
+      <main class="container">
          <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-         <section>
-            <ul class="features">
-               <li class="features-background web-site">
-                  <!--<img src="img/web-site.jpg" width="300" height="146" alt="Веб-сайты"> как только научусь пользоваться CSS удалю-->
+         <section  class="features">
+            <ul class="features-list">
+               <li class="features-item web-site">
                   <h2>Веб-сайты</h2>
                   <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                   <a href="#" class="order red">Заказать</a>
                </li>
-               <li class="features-background application">
-                  <!--<img src="img/application.png" width="300" height="146" alt="Приложения"> как только научусь пользоваться CSS удалю-->
+               <li class="features-item application">
                   <h2>Приложения</h2>
                   <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                   <a href="#" class="order green">Заказать</a>
                </li>
-               <li class="features-background presentations">
-                  <!--<img src="img/presentations.png" width="300" height="146" alt="Презентации"> как только научусь пользоваться CSS удалю-->
+               <li class="features-item presentations">
                   <h2>Презентации</h2>
                   <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                   <a href="#" class="order yellow">Заказать</a>
@@ -57,27 +56,13 @@
             	<li>Мобильных приложений для iOS и Android</li>
             	<li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-            </section>  -->		
+         </section>  -->
       </main>
-      <footer>
-         <section  class="feedback">
-            <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
-               <h3>Напишите нам</h3>
-               <label for="Name">
-               Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
-               </label>      		
-               <label for="e-mail">
-               Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
-               </label>
-               <label for="comment">
-               Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
-               </label>
-               <button class="button-send" type="submit">Отправить</button>
-            </form>
-            <!-- <img class="map" src="img/map-1.png" alt="Карта нашего местонахождения">-->  		
-         </section>
-         <section class="contact">
-            <ul>
+      <footer class="footer">
+         <div class="container">         
+            <section class="contact">
+            <h2 class="visually-hidden">Социальные сети Нёрдс</h2>
+            <ul class="user-contact">
                <li>
                   <a href="http://vk.com" class="icon-social" aria-label="Ссылка на наш VK">
                      <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
@@ -94,11 +79,27 @@
                   </a>
                </li>
             </ul>
-            <div class="sale">
+            </section>
+            <section class="sale">
                <h2>Давайте дружить, это выгодно!</h2>
                <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-         </section>
+            </section>         
+         </div>
       </footer>
+      <section  class="feedback">
+            <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
+               <h3>Напишите нам</h3>
+               <label for="Name">
+               Ваше имя:  <input id="Name" type="text" name="Name" placeholder="Имя Фамилия" required>
+               </label>          
+               <label for="e-mail">
+               Ваш e-mail: <input id="e-mail" type="email" placeholder="email@examle.com" required>
+               </label>
+               <label for="comment">
+               Текст письма: <textarea id="comment" name="text" placeholder="В свободной форме" required></textarea>
+               </label>
+               <button class="button-send" type="submit">Отправить</button>
+            </form> 
+      </section>
    </body>
 </html>
