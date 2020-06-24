@@ -102,6 +102,7 @@ img {
 .site-navigation {
 	width: 620px;
   	margin: 0;
+  	margin-left: 202px;
   	padding: 0;
 
   	list-style: none;
@@ -119,6 +120,11 @@ img {
 
 .site-navigation li {
 	display: inline;
+	margin-right: 44px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
 }
 
 .user-navigation li {
@@ -180,7 +186,7 @@ img {
 	order: -1;
 	width: 160px;
   	height: 65px;
-  	margin-left: 140px;
+
   	outline: 5px solid rgba(255, 0, 0, 0.3);
   	outline-offset: -5px;
 }
@@ -287,8 +293,7 @@ img {
 .features-list {
 	display: grid;
   	grid-template-columns: 1fr 1fr 1fr;
-  	column-gap: 100px;
-  	margin-left: 140px;  	
+  	column-gap: 100px; 	
   	padding: 0;
 
   	list-style: none;
