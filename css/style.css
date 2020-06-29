@@ -83,6 +83,12 @@ img {
   	min-height: 100%; 
 }
 
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 	/* Main navigation */
 
 .main-navigation {
@@ -105,8 +111,6 @@ img {
   	margin-left: 202px;
   	padding: 0;
 
-  	list-style: none;
-
   	outline: 5px solid rgba(0, 255, 255, 0.3);
   	outline-offset: -5px;  	
 }
@@ -116,6 +120,10 @@ img {
 
   	outline: 5px solid rgba(255, 0, 255, 0.3);
   	outline-offset: -5px;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--black);
 }
 
 .site-navigation li {
@@ -175,7 +183,7 @@ img {
 }
 
  .page {
- 	border-bottom-width: 2px;
+ 	border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: var(--red-light);
     padding-bottom: 10px;
@@ -251,7 +259,6 @@ img {
 
 .user-contact {
 	margin: 0;
-	list-style: none;
 }
 
 .sale p {
@@ -290,13 +297,8 @@ img {
 	line-height: 24px;
 }
 
-.features-list {
-	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr;
-  	column-gap: 100px; 	
+.features-list {	
   	padding: 0;
-
-  	list-style: none;
 
   	outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
@@ -349,6 +351,7 @@ img {
 .order {
 	display: inline-block;
 	border: 1px solid;
+	border-radius: 3px;
 	padding: 16px 40px 16px 40px;
 
 	text-align: center;
@@ -367,6 +370,7 @@ img {
 }
 
 .red:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--red-dark);
 }
 
@@ -379,6 +383,7 @@ img {
 }
 
 .green:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--green-dark);
 }
 
@@ -391,6 +396,7 @@ img {
 }
 
 .yellow:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--yellow-dark);
 }
 
@@ -420,16 +426,15 @@ img {
 }
 
 .filter-form {
-	margin-left: 140px;
-
 	background-color: #F0E68C;
 	outline: 1px solid red;
 }
 
 .filter {
+	display: flex;
 	flex-direction: column;
 
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;	
 }
 
@@ -439,7 +444,7 @@ img {
 	font-weight: bold;
 }
 
-.filter-type, input {
+.filter input {
 	display: flex;
 	flex-direction: column;
 }
@@ -456,7 +461,7 @@ img {
 	margin: 10px;
 	padding: 10px;
 
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto",  "Tahoma", sans-serif;
 	font-size: 16px;
 
 	background-color: #F0E68C;
@@ -469,6 +474,7 @@ img {
 
 .price {	
 	border: 1px solid;
+	border-radius: 3px;
 	padding: 17px 72px 15px 72px;
 
 	font: inherit;
@@ -487,34 +493,22 @@ img {
 	display: block
 }
 
-.catalog-sedona {
-	align-items: flex-start;
-
+.catalog-item {
 	outline: 1px solid red;
 }
 
-.catalog-pink {
-	align-items: flex-end;
-
-	outline: 1px solid red;
+.catalog li {
+	margin-right: 42px;
+	margin-bottom: 31px;
 }
 
-.catalog-barbershop {
-	outline: 1px solid red;
+.catalog li:nth-child(2n) {
+	margin-right: 0;
 }
 
-.catalog-mishka {
-	outline: 1px solid red;
+.catalog li:nth-child(5n) {
+	margin-bottom: 0px;
 }
-
-.catalog-aplus {
-	outline: 1px solid red;
-}
-
-.catalog-kvast {
-	outline: 1px solid red;
-}
-
 
 /*.button-send {
 	
